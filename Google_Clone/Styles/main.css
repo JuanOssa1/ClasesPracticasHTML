@@ -48,4 +48,16 @@ nav .nav-right-section img {
     border-radius: 50%; /*Esto le da redondeo a la imagen*/
     margin-left: 10px;
 }
+main {
+    margin-top: 150px;
+    text-align: center;
+}
+main .main-logo{
+    width: 530px;
+    margin: 0 auto; /*El auto lo que hace es que como yo defini un widt de 530 el restante lo va a poner como  margin left y right si no hago esto todo el margin seria right*/
+    margin-bottom: 35px;
+}
+main .main-logo img{
+    width: 300px;
+}
 
