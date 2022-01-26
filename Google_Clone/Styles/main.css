@@ -1,0 +1,51 @@
+body{ /*Porque cuando pongo body y porque cuando pongi * se pone todo picho y el padding cambia?*/
+    /*box-sizing: border-box;*/
+    margin: 0;
+    padding: 0;
+}
+a{
+    text-decoration: none; /*Quita todas las decoraciones de las etiquetas*/
+    cursor: pointer;/*Pseudo clases y pseudo elementos*/
+}
+
+html{
+    font-size: /*62.5%*/14px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+
+
+header{ /*Normalmente el header ocupa el 100%*/
+    width: 100%;
+    height: 60px; /*Esta normalmente se define dedocraticamente*/  
+}
+header nav{
+    display: flex;
+    justify-content: flex-end;
+}
+header nav .nav-right-section { /*Asi esta bien especifico*/
+    width: 250px; /*Aqui ya no defino kla altura ya que el padre ya tiene una altura definda y la seccion no puede ser mas alta*/
+    height: auto; /*Automaticamente toma la altura del padre*/
+    display: flex;
+    list-style: none;
+    justify-content: center;
+    align-items: center;
+    
+}
+nav .nav-right-section a{
+    margin-right: 10px;
+    color: black;
+}
+nav .nav-right-section .menu-icon{
+    background-image: url('https://static.thenounproject.com/png/756729-200.png'); /*Aqui lo que sucede es que hay un contenedor y a ese fondo de ese contenedor le estoy poniendo este icono*/
+    background-repeat: no-repeat; /*Ver ejemplo en word*/
+    background-position: center; /*Dimension del contendor del tamaño del icono Ver ejemplo word*/
+    background-size: contain; /*contain pone la imagen del tama;o del contendor*/
+    width: 25px;
+    height: 25px;
+}
+nav .nav-right-section img {
+    border-radius: 50%; /*Esto le da redondeo a la imagen*/
+    margin-left: 10px;
+}
+
