@@ -10,7 +10,7 @@ a{
 
 html{
     font-size: /*62.5%*/14px;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-family: 'Noto Sans';
 }
 
 
@@ -59,5 +59,46 @@ main .main-logo{
 }
 main .main-logo img{
     width: 300px;
+}
+main .main-input{
+    width: 530px;
+    margin: 0 auto;
+    margin-bottom: 35px;
+}
+main .main-input-container{
+    width: 525px;
+    border-radius: 100px;
+    border: 1px solid #dfe1e5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+main .main-input input{
+    width: 450px;
+    height: 40px;
+    border: none; /*El boder y el outline los quitamos porque como hicimos arribita hicimos que el contenedor de la barra tomara la forma que queriamos entonces ahora queremos es ocultar el contenedor por defecto que hay*/
+    outline: none;
+}
+main .main-input-container:hover { /*pseudo elemento que cuando pase el mouse por encima haga x cosa en este caso sombra*/
+    box-shadow: 0 1px 6px 0 #20212447; /*1px lo que hace es como ubicar dionde va a mostrar la sombra y 6px es que tan grande va a ser ver apuntes word */
+    border-color:#dfe1e500 ;
+}
+main .main-input .search-icon {
+    background-image: url('https://cdn0.iconfinder.com/data/icons/google-material-design-3-0/48/ic_search_48px-512.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    width: 18px;
+    height: 18px;
+    opacity: .55; /*Menor valor mas clarito*/
+}
+main .main-input .micro-icon{
+    background-image: url(' https://upload.wikimedia.org/wikipedia/commons/thumb/e/e8/Google_mic.svg/726px-Google_mic.svg.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    width: 18px;
+    height: 18px;
+    cursor: pointer; /*Hace que aparezca una mano cuando paso sobre el icono*/
 }
 
